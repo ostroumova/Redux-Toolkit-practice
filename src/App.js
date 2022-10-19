@@ -1,7 +1,7 @@
-import React, { useSelector, useDispatch } from "react";
-import { decrement, increment } from "./redux/counter";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import "./styles.css";
-import { decrement, increment, incrementByAmount } from "./redux/store";
+import { decrement, increment, incrementByAmount } from "./redux/counter";
 
 export default function App() {
   const { count } = useSelector((state) => state.counter);
